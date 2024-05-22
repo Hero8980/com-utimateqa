@@ -5,7 +5,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
-import java.util.Scanner;
 
 /**
  * Project-5 - ProjectName : Programme_5_Com_Utimateqa
@@ -28,19 +27,13 @@ import java.util.Scanner;
  */
 
 
-
-
-
-public class Project_5_Com_Utimateqa {
+public class MultiBrowser {
     static String browser = "Chrome";
     static String baseUrl = "https://courses.ultimateqa.com/";
     static WebDriver driver;
 
     public static void main(String[] args) {
-        //using Scanner Declaration
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter Browser name : ");
-        String browser = scanner.nextLine();
+
         if (browser.equalsIgnoreCase("Chrome")) {
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("Firefox")) {
